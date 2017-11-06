@@ -38,6 +38,8 @@ public class WandListener implements Listener {
 
 		WrappedPlayer wrapped = this.registry.getWrapped(player);
 
+		event.setCancelled(true);
+
 		if (action == Action.LEFT_CLICK_BLOCK)
 		{
 			wrapped.setPosLeft(event.getClickedBlock().getLocation());

@@ -11,7 +11,7 @@ public class Schempoc extends ServidePlugin {
 	@Override
 	public void enable()
 	{
-
+		this.getDataFolder().mkdirs();
 	}
 
 	@Override
