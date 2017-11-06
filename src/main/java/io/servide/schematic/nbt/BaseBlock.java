@@ -156,8 +156,10 @@ public class BaseBlock {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (!(o instanceof BaseBlock)) {
+    public boolean equals(Object o)
+    {
+        if (!(o instanceof BaseBlock))
+        {
             return false;
         }
 
@@ -168,7 +170,8 @@ public class BaseBlock {
     }
 
     @Override
-    public int hashCode() {
+    public int hashCode()
+    {
         int ret = this.getId() << 3;
 
         if (this.getData() != (byte) -1)
